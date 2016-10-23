@@ -1,0 +1,5 @@
+<resources>
+    <string name="thaiW">Weight(kg)</string>
+    <string name="thaiH">Height(cm)</string>
+    <string name="app_name">BMI Calculator</string>
+</resources>

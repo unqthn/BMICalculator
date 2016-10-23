@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="286dp"
+            android:layout_height="66dp"
+            app:srcCompat="@drawable/bmi"
+            android:id="@+id/imageView"
+            android:layout_weight="0.24" />
+
+        <TextView
+            android:text="@string/thaiH"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:id="@+id/textViewH"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_weight="0.05" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/height"
+            android:layout_weight="0.11"
+            android:background="@android:color/background_light"
+            android:gravity="right|center_vertical" />
+
+        <TextView
+            android:text="@string/thaiW"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewW"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_weight="0.05" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/weight"
+            android:layout_weight="0.12"
+            android:background="@android:color/background_light"
+            android:gravity="right|center_vertical" />
+
+        <Button
+            android:text="CALCULATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_weight="0.09"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</RelativeLayout>
